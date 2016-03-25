@@ -1,0 +1,77 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+
+.image {
+  background-image: image-url("cover.jpg");
+  position: absolute;
+  top: 73px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+.image:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to rgba(0,101,168,0.6));
+
+}
+
+.card {
+    height: 250px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    background-size: cover !important;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.card-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.card-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.card-description h2 {
+    font-size: 22px;
+}
+
+.card-description p {
+    font-size: 15px;
+}
+
+.card-user {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background: black;
+    opacity: 0;
+}
+
+.avatar-large {
+  width: 50px;
+  border-radius: 50%;
+}
