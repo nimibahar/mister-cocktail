@@ -1,2 +1,15 @@
 <h1>Doses#new</h1>
 <p>Find me in app/views/doses/new.html.erb</p>
+
+<h2><%= @cocktail.name %></h2>
+
+
+<%= simple_form_for [@cocktail, @dose] do |d| %>
+  <%= d.error_notification %>
+  <%= d.input :ingredient_id, collection: Ingredient.all %><br>
+  <%= d.input :description %><br>
+
+  <div class='btn btn-primary' >
+    <%= d.button :submit %>
+  </div>
+<% end %>
